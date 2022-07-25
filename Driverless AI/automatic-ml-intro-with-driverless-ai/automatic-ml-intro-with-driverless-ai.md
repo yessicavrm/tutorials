@@ -52,7 +52,7 @@ H2O Driverless AI is a high-performance, GPU-enabled computing platform for auto
 
 Welcome to the Driverless AI **Datasets** page(this will be the first thing you will see when you click your **Driverless AI URL**): 
 
-![dai-datasets-page](assets/dai-datasets-page.png)
+![dai-datasets-page](assets/dai-datasets-homepage.jpg)
 
 On the **Datasets** page, the following options and features can be found. Now, we will quickly review them, but we will further explore these options and features before and after we launch an experiment in the upcoming tasks. 
 
