@@ -201,7 +201,7 @@ The typical Driverless AI workflow is to:
 Besides, you can diagnose a model, transform another dataset, score the model against another dataset and manage your data in Projects. This self-paced course's focus will be on steps 1 - 4. We will cover Driverless AI's other aspects in other self-paced courses found in the Driverless AI learning path. We will start with step 1: load data.
 
 <p align="center"> 
-    <img src='assets/typical-driverless-ai-workflow.jpg' ></img>      
+    <img src='assets/dai-add-dataset.jpg' ></img>      
 </p>
 
 
@@ -261,7 +261,7 @@ To further understand the data, please consider the table below:
 
 3\. The following will appear after you have successfully imported the dataset:
 
-![titanic-set-overview](assets/titanic-set-overview.png)
+![titanic-set-overview](assets/dai-titanic-dataset.jpg)
 
 - *Things to Note*</br>
 **a.** You can view:
@@ -287,7 +287,7 @@ We are now going to explore the Titanic dataset that we just loaded.
 
 1\. On the **Dataset Overview page**, click on the *titanic.csv*. The following options will appear:
 
-![titanic-set-actions](assets/titanic-set-actions.png)
+![titanic-set-actions](assets/dai-titanic-dropdown-menu.jpg)
 
 - *Things to Note:*</br>
 **a.** The dataset we imported in task 3</br>
@@ -381,7 +381,7 @@ The split ratio of .75 (75% for the training set and 25% for the test set) was s
 
 3\. Verify that the three Titanic datasets, *titanic_test*, *titanic_train*, and *titanic.csv*, are there:
 
-![three-datasets](assets/three-datasets.png)
+![three-datasets](assets/dai-titanic-split.jpg)
 
 ### Autoviz
 
@@ -401,7 +401,7 @@ There are two ways to visualize the training set:
 
 2\. Click on the **titanic_train** visualization, and the following graphs will appear:
 
-![train-set-visualizations](assets/train-set-visualizations.png)
+![train-set-visualizations](assets/dai-visualizations-titanic_train.jpg)
 
 Is it possible to visualize how variables on the training set are correlated? Can we determine what other variables are strongly correlated to a passenger's survival? The answer to those questions is **yes!** One of the graphs that allow us to visualize the correlations between variables is the **Correlation Graph**.
 
