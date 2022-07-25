@@ -255,7 +255,7 @@ To further understand the data, please consider the table below:
 
 ![select-titanic-dataset](assets/select-titanic-dataset.png)
 
-**a.** Enter the following in the search bar:`/data/TestDrive/titanic.csv`</br>
+**a.** Enter the following in the search bar:`titanic.csv`</br>
 **b.** Select the `titanic.csv` </br>
 **c.** **Click to Import Selection**:
 
