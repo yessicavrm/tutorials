@@ -193,9 +193,9 @@ https://www.brighttalk.com/search/?q=driverless+ai)
 The typical Driverless AI workflow is to:
 
 1. Load data
-2. Visualize data
-3. Run an experiment
-4. Interpret the model
+2. Explore data
+3. Build Model
+4. Understand Model
 5. Deploy the scoring pipeline
 
 Besides, you can diagnose a model, transform another dataset, score the model against another dataset and manage your data in Projects. This self-paced course's focus will be on steps 1 - 4. We will cover Driverless AI's other aspects in other self-paced courses found in the Driverless AI learning path. We will start with step 1: load data.
@@ -244,7 +244,7 @@ To further understand the data, please consider the table below:
 1\. Navigate back to the H2O Driverless AI **Datasets** page. To add the dataset:
 
 <p align="center">
-<img src="assets/dai-add-dataset.jpg" width="320" height="460">
+<img src="assets/dai-add-dataset.jpg">
 </p>
 
 **a.** Click on **Add a Dataset(or Drag and Drop)**  
@@ -274,7 +274,7 @@ To further understand the data, please consider the table below:
 
 Now that the dataset has been imported let's discover on the next task how Driverless AI allows users to further understand a selected dataset. Doing so will allow us to further explore the second step of the Driverless AI workflow: visualize data. 
 
-**Note** See below a short video demonstration of how to import your dataset to DriverlessAI
+**Note:** See below a short video demonstration of how to import your dataset to Driverless AI
 <p align="center">
 <img src="assets/dai-add-dataset-gif.gif">
 </p>
@@ -347,7 +347,7 @@ Next, we are going to confirm that the dataset loaded correctly and that it has 
 
 3\. To continue learning about what details are available, click on the following button: **Dataset Rows**. The following will appear: 
 
-![titanic-set-rows-page](assets/titanic-set-rows-page.png)
+![titanic-set-rows-page](assets/dai-titanic-set-rows-page.png)
 
 - *Things to Note:*</br>
     **a.** Preview the dataset</br>
@@ -369,7 +369,7 @@ From the *Titanic.csv* dataset, we are going to create two datasets, *training* 
 
 2\. Split the data into two sets: `titanic_train` and `titanic_test`, then save the changes. Use the image below as a guide: 
 
-![titanic-set-split-2](assets/titanic-set-split-2.png)
+![titanic-set-split-2](assets/dai-dataset-splitter-v1.jpg)
 
 - *Things to Note:*</br>
 
@@ -394,7 +394,7 @@ Now that the *titanic.csv* dataset has been split, we will now use the **titanic
 
 There are two ways to visualize the training set:
 
-![titanic-train-visualize](assets/dai-select-visualize.png)
+![titanic-train-visualize](assets/dai-select-visualize-ab.jpg)
 
 - *Things to Note:*</br>
     **a.** **Method One**: Clicking on the **titanic_train** file, select **Visualize**, then click on the visualization file generated.</br>
@@ -524,7 +524,7 @@ The *survived* attribute was selected because, as an insurance company, we want 
 
 8\. Your experiment page should look similar to the one below; these are the system suggestions based on the data selected to train this model:
 
-![experiment-settings](assets/experiment-settings.png)
+![experiment-settings](assets/dai-experiment-setup.jpg)
 
 - *Things to Note:*</br>
     **a.** **Training Settings** - Describes your specific experiment's Accuracy, Time, and Interpretability. The knobs on the experiment settings are adjustable as values change the settings' meaning on the left-bottom page change.</br>
@@ -566,7 +566,7 @@ The *survived* attribute was selected because, as an insurance company, we want 
 - **Interpretability:** 6
 - **Scorer:** AUC (if the scorer is not AUC, you can click on the Scorer circle, and you can choose the AUC option)
 
-![update-experiment-settings](assets/update-experiment-settings.png)
+![update-experiment-settings](assets/dai-updated-experiment-setup.jpg)
 
 - *Things to Note:*</br>
 **a.** Here, you can update the experiment settings</br>
