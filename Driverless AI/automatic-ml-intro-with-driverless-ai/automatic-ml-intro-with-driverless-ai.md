@@ -63,8 +63,9 @@ On the **Datasets** page, the following options and features can be found. Now, 
     **d.** In the **Experiments** section, you can view completed experiments. Experiments can be revised or deleted.</br>
     **e.** In the **Diagnostics** section, you can diagnose a model and view model performance for multiple scorers based on the existing model and dataset.</br>
     **f.** In the **MLI (Machine Learning Interpretability)** section, you can interpret a model and view a list of already interpreted models.</br>
-    **g.** The **Deployments** section allows you to access the MOJO and Python scoring pipelines for you to test or integrate into a final product. You can also deploy locally or in the cloud.</br>
-    **h.** The **Resources** dropdown menu provides you with the following options to view or download: 
+    **g.** In the **Recipes** section, you have the option to add your own custom recipe or add  official recipes from H2O.ai’s github repository. You can add a custom recipe from your computer, a url, a bitbucket, or with an editor. </br>    
+   **h.** The **Deployments** section allows you to access the MOJO and Python scoring pipelines for you to test or integrate into a final product. You can also deploy locally or in the cloud.</br>
+    **i.** The **Resources** dropdown menu provides you with the following options to view or download: 
     - System Info
     - Python Client 
     - R Client 
@@ -75,14 +76,14 @@ On the **Datasets** page, the following options and features can be found. Now, 
     - Help
     - About</br>
     
-    **i.** The **User** option offers the following options:
+    **j.** The **User** option offers the following options:
     - **Messages[ ]**: View upcoming events regardinging Driverless AI.
     -  **Logout**: Logs you out of your current session.</br>
 
-    **j.** **<**: Takes you back to the previous page.</br>
-    **k.** **H2O.ai**: Takes you back to the H2OAI **Datasets** page.</br>
-    **l.** **Driverless AI 1.X.X**: Version of Driverless AI </br>
-    **m.** The **+ Add a Dataset(or Drag and Drop)** button provides the following options: 
+    **k.** **<**: Takes you back to the previous page.</br>
+    **l.** **H2O.ai**: Takes you back to the H2OAI **Datasets** page.</br>
+    **m.** **Driverless AI 1.X.X**: Version of Driverless AI </br>
+    **n.** The **+ Add a Dataset(or Drag and Drop)** button provides the following options: 
     - *File System*: Search for datasets in our repository 
     - *Upload File*: Upload a dataset from your computer 
     - *Amazon S3*: Upload a dataset by using S3 buckets
@@ -90,7 +91,7 @@ On the **Datasets** page, the following options and features can be found. Now, 
     - *Data Recipe URL*: Upload a dataset with a customize data recipe reachable through a URL
     - *Upload Data Recipe*: Upload a dataset with a customize data recipe located on your computer</br>
     
-    **n.** **Type value to search for or date, e,g, 15/09:** Search for a given dataset by inputting its creation date.
+    **o.** **Type value to search for or date, e,g, 15/09:** Search for a given dataset by inputting its creation date.
 
 
 Before we load the dataset for our experiment, let us review some introductory concepts around Machine Learning. 
