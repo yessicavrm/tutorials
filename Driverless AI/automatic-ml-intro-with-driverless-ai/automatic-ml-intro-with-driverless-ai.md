@@ -245,7 +245,7 @@ To further understand the data, please consider the table below:
 1\. Navigate back to the H2O Driverless AI **Datasets** page. To add the dataset:
 
 <p align="center">
-<img src="assets/dai-add-dataset.jpg" width="300" height="350">
+<img src="assets/dai-add-dataset.jpg" width="300" height="300">
 </p>
 
 **a.** Click on **Add a Dataset(or Drag and Drop)**  
