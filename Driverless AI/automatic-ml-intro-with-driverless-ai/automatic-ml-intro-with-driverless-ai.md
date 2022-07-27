@@ -200,8 +200,8 @@ The typical Driverless AI workflow is to:
 
 Besides, you can diagnose a model, transform another dataset, score the model against another dataset and manage your data in Projects. This self-paced course's focus will be on steps 1 - 4. We will cover Driverless AI's other aspects in other self-paced courses found in the Driverless AI learning path. We will start with step 1: load data.
 
-<p align="center"> 
-    <img src='assets/dai-add-dataset.jpg' ></img>      
+<p align="center">
+    <img src='assets/dai-workflow.jpg' ></img>      
 </p>
 
 
@@ -244,7 +244,7 @@ To further understand the data, please consider the table below:
 1\. Navigate back to the H2O Driverless AI **Datasets** page. To add the dataset:
 
 <p align="center">
-<img src="assets/add-dataset-file-system.png" width="320" height="460">
+<img src="assets/dai-add-dataset.jpg" width="320" height="460">
 </p>
 
 **a.** Click on **Add a Dataset(or Drag and Drop)**  
@@ -253,7 +253,7 @@ To further understand the data, please consider the table below:
 
 2\. Inside the **FILE SYSTEM**:
 
-![select-titanic-dataset](assets/select-titanic-dataset.png)
+![select-titanic-dataset](assets/select-titanic-csv.jpg)
 
 **a.** Enter the following in the search bar:`titanic.csv`</br>
 **b.** Select the `titanic.csv` </br>
@@ -273,6 +273,11 @@ To further understand the data, please consider the table below:
     - Date created
 
 Now that the dataset has been imported let's discover on the next task how Driverless AI allows users to further understand a selected dataset. Doing so will allow us to further explore the second step of the Driverless AI workflow: visualize data. 
+
+**Note** See below a short video demonstration of how to import your dataset to DriverlessAI
+<p align="center">
+<img src="assets/dai-add-dataset-gif.gif">
+</p>
 
 ### Deeper Dive and Resources
 
@@ -308,14 +313,14 @@ Next, we are going to confirm that the dataset loaded correctly and that it has 
 2\. Click the **Details** option, and it will take you to the **Dataset Details Page**:
 
 <p align="center">
-<img src="assets/titanic-set-details-page.png">
+<img src="assets/dai-titanic-set-page.png">
 </p>
 
 - *Things to Note:*</br>
     **a.** The **Dataset Details Page** provides a summary of the dataset.
     - View the first 20 rows of a column by hovering over the column name (see image below):
             <p align="center">
-            <img src="assets/datasets-details-first-20-rows.jpg" height="510" width="365">
+            <img src="assets/dai-details-first-20-rows.jpg" height="510" width="365">
             </p></br>
         **Note**: Driverless AI recognizes the following column types: integer, string, real, boolean, and time. Date columns are given a string "str" type.</br>
 
@@ -334,9 +339,9 @@ Next, we are going to confirm that the dataset loaded correctly and that it has 
     **f.** Option to exit and return to the H2O **Datasets** page.</br>
     **g.** **Feature Props:** Allows you to change the column's logical type. If you were to change a given column, you could do so by following these steps:
     - Click **Auto-detect**:
-            ![feature-props-click-to-edit](assets/feature-props-click-to-edit.jpg)
+            ![feature-props-click-to-edit](assets/dai-autodetect-details-highlight.jpg)
     - Click **Feature Engineering Type(s):** 
-            ![feature-props-auto-to-detect](assets/feature-props-auto-detect.jpg)
+            ![feature-props-auto-to-detect](assets/dai-feature-auto-detect.jpg)
     - Select column feature engineering types(b) (then click **done** at the bottom of page(c)) or start typing to filter out items(a):
             ![logical-type-options](assets/logical-type-options.png)
 
@@ -360,7 +365,7 @@ From the *Titanic.csv* dataset, we are going to create two datasets, *training* 
 
 1\. Click on the *titanic.csv* file and select **Split**:
 
-![titanic-set-split-1](assets/titanic-set-split-1.png)
+![titanic-set-split-1](assets/dai-select-split.jpg)
 
 2\. Split the data into two sets: `titanic_train` and `titanic_test`, then save the changes. Use the image below as a guide: 
 
@@ -389,7 +394,7 @@ Now that the *titanic.csv* dataset has been split, we will now use the **titanic
 
 There are two ways to visualize the training set:
 
-![titanic-train-visualize](assets/titanic-train-visualize.png)
+![titanic-train-visualize](assets/dai-select-visualize.png)
 
 - *Things to Note:*</br>
     **a.** **Method One**: Clicking on the **titanic_train** file, select **Visualize**, then click on the visualization file generated.</br>
@@ -397,7 +402,7 @@ There are two ways to visualize the training set:
 
 1\. Pick a method to visualize the **titanic_train** dataset. Right after, the following will appear: 
 
-![train-set-visualization-ready](assets/train-set-visualization-ready.png)
+![train-set-visualization-ready](assets/dai-titanic-visualization-ready.jpg)
 
 2\. Click on the **titanic_train** visualization, and the following graphs will appear:
 
@@ -455,7 +460,7 @@ We are going to launch our first experiment. An experiment means that we are goi
 
 1\. Return to the **Datasets Overview** page and click on the **titanic_train** dataset, then select **Predict**:
 
-![titanic-train-predict](assets/titanic-train-predict.png)
+![titanic-train-predict](assets/dai-titanic-set-predict.jpg)
 
 If this is your first time launching an experiment, the following prompt will appear, asking if you want to take a tour: 
 
@@ -471,12 +476,12 @@ If you would like to take a quick tour of the **Experiments** page, select **YES
 
 3\. The **Experiment preview page** will appear; this preview page displays all settings that Driverless AI  will use before launching an experiment:
 
-![train-set-experiment-page](assets/train-set-experiment-page.png)
+![train-set-experiment-page](assets/dai-experiment-setup-overview.jpg)
 
 - *Things to Note:*</br>
     **a.** **Assistant** - Interactive tour for first-time users. 
     - Click on **ASSISTANT** to enable it. Yellow circles will appear around sections of the experiment setup page; you can hover over any of them to get more information on each section:
-        ![titanic-train-assist-sample](assets/titanic-train-assist-sample.png)
+        ![titanic-train-assist-sample](assets/dai-titanic-assistant.jpg)
     **Note:** To disable **ASSISTANT**, click on assistant again.</br>
 
     **b.** **Display Name** - Optional: Specify a display name for the new experiment. There are no character or length restrictions for naming. If this field is left blank, Driverless AI will automatically generate a name for the experiment.</br>
@@ -509,7 +514,7 @@ A clean dataset is essential for the creation of a good predictive model. The pr
 
 6\. For our experiment, we will be using a test dataset. To select the test dataset, select **TEST DATASET** and select the **titanic_test**:
 
-![add-test-set](assets/add-test-set.png)
+![add-test-set](assets/dai-titanic-test-experiment.jpg)
 
 7\. Now, select the **TARGET COLUMN**. In our case, the column will be **survived**. We want to know who will be *surviving* base on the information the model will be trained on (e.g., age):
 
