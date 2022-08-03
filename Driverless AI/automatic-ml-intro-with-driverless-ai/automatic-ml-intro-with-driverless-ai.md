@@ -27,10 +27,11 @@ In part, this self-paced course will also be an overview of Driverless AI. You w
 
 ## Prerequisites
 
-- Basic knowledge of Machine Learning and Statistics
-- A **Two-Hour Test Drive session**: Test Drive is H2O.ai's Driverless AI on the AWS Cloud. No need to download software. Explore all the features and benefits of the H2O Automatic Learning Platform.
-  - Need a **Two-Hour Test Drive** session? Follow the instructions [on this quick self-paced course](https://h2oai.github.io/tutorials/getting-started-with-driverless-ai-test-drive) to get a Test Drive session started. After the Driverless AI Test Drive session starts, continue reading the remaining prerequisites of this self-paced course, then start **Task 1: Product Tour**.
-  - Already have a **Two-Hour Test Drive** session? Proceed to **Task 1: Product Tour**.
+* Basic knowledge of Machine Learning and Statistics
+* Access to an **H2O AI Cloud account**
+* If you are not currently an H2O AI Cloud Customer, contact H2O (training.h2o.ai) to sign up for access to our H2O University managed cloud instance.
+
+
 
 **Note:  Aquarium’s Driverless AI Test Drive lab has a license key built-in, so you don’t need to request one to use it. Each Driverless AI Test Drive instance will be available to you for two hours, after which it will terminate. No work will be saved. If you need more time to further explore Driverless AI, you can always launch another Test Drive instance or reach out to our sales team via the [contact us form](https://www.h2o.ai/company/contact/).**
 
