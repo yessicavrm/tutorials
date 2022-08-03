@@ -33,7 +33,7 @@ In part, this self-paced course will also be an overview of Driverless AI. You w
 
 
 
-**Note:  Aquarium’s Driverless AI Test Drive lab has a license key built-in, so you don’t need to request one to use it. Each Driverless AI Test Drive instance will be available to you for two hours, after which it will terminate. No work will be saved. If you need more time to further explore Driverless AI, you can always launch another Test Drive instance or reach out to our sales team via the [contact us form](https://www.h2o.ai/company/contact/).**
+**Note:  You will be required to start and stop your instance on Enterprise Steam.**
 
 
 ## Task 1: Product Tour
