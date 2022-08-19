@@ -244,7 +244,7 @@ To further understand the data, please consider the table below:
 ### Add the Dataset
 1\. Access your H2O AI Cloud account and select the H2O Drive application.
 <p align="center">
-<img src="assets/H2O_ai_cloud_portal.jpg" width= "50%" height= "50">
+<img src="assets/H2O_ai_cloud_portal.jpg" width= "50%" height= "50%">
 </p>
 
 Select **visit** and you will be taken to the H2O Drive homepage.
@@ -258,7 +258,7 @@ Next you'll need to import the Titanic dataset by selecting Amazon S3 and inputt
 See the video below if you would like to follow along.
 
 <p align="center">
-<img src="assets/H2o_Drive_upload_gif.mp4">
+<img src="assets/H2o_Drive_upload_gif.gif" width="50%" height="50%">
 </p>
 
 
