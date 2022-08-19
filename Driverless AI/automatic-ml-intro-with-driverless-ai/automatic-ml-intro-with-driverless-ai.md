@@ -253,14 +253,13 @@ Select **visit** and you will be taken to the H2O Drive homepage.
 
 Next you'll need to import the Titanic dataset by selecting Amazon S3 and inputting **https://s3.amazonaws.com/data.h2o.ai/DAI-Tutorials/titanic.csv**
 
- ![h2o_drive_import_s3](h2o_drive_import_s3)
+ ![h2o_drive_import_s3](h2o_drive_import_s3.jpg)
 
 See the video below if you would like to follow along.
 
 <p align="center">
-<img src="assets/H2oDrive_upload_gif" width="320" height="460">
+<img src="assets/H2oDrive_upload_gif.gif" width="320" height="460">
 </p>
-
 
 
 1\. Navigate back to the H2O Driverless AI **Datasets** page. To add the dataset:
