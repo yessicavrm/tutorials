@@ -270,10 +270,10 @@ To further understand the data, please consider the table below:
 </p>
 
 **a.** Click on **Add a Dataset(or Drag and Drop)**  
-**b.** Select **FILE SYSTEM**:
+**b.** Select **H2O Drive**:
 
 
-3\. Inside the **FILE SYSTEM**:
+3\. Inside the **H2O Drive**:
 
 ![select-titanic-dataset](assets/select-titanic-csv.jpg)
 
@@ -294,12 +294,12 @@ To further understand the data, please consider the table below:
     - File status
     - Date created
 
-Now that the dataset has been imported let's discover on the next task how Driverless AI allows users to further understand a selected dataset. Doing so will allow us to further explore the second step of the Driverless AI workflow: visualize data. 
-
 **Note:** See below a video demonstration of how to import your dataset to Driverless AI.
 <p align="center">
 <img src="assets/dai-add-dataset-gif.gif">
 </p>
+
+Now that the dataset has been imported let's discover on the next task how Driverless AI allows users to further understand a selected dataset. Doing so will allow us to further explore the second step of the Driverless AI workflow: visualize data. 
 
 ### Deeper Dive and Resources
 
@@ -506,17 +506,18 @@ If you would like to take a quick tour of the **Experiments** page, select **YES
         ![titanic-train-assist-sample](assets/dai-titanic-assistant.jpg)
     **Note:** To disable **ASSISTANT**, click on assistant again.</br>
 
-    **b.** **Display Name** - Optional: Specify a display name for the new experiment. There are no character or length restrictions for naming. If this field is left blank, Driverless AI will automatically generate a name for the experiment.</br>
-    **c.** **Training Dataset** - The name of the Dataset being used to create an experiment</br>
-    **d.** **Rows** - Total number of rows</br>
-    **e.** **Columns** - Total number of columns</br>
-    **f.** **Dropped Columns** - Drop column(s) from your Dataset that you don't want to use in the experiment. For more information, see the H2O.ai documentation [here](http://docs.h2o.ai/driverless-ai/1-8-lts/docs/userguide/experiment-settings.html?highlight=accuracy#dropped-columns)</br>
-    **g.** **Validation Dataset** - Select the Dataset you want to validate. This set will be used to validate parameters like models, features, etc. For more information, see the H2O.ai documentation [here](http://docs.h2o.ai/driverless-ai/1-8-lts/docs/userguide/experiment-settings.html?highlight=accuracy#validation-dataset)</br>
-    **h.** **Test Dataset** - The Dataset will test the model generated from the training dataset. It's not used during the model's training, and results are available at the end of the experiment. For more information, see the H2O.ai documentation [here](http://docs.h2o.ai/driverless-ai/1-8-lts/docs/userguide/experiment-settings.html?highlight=accuracy#test-dataset)</br>
-    **i.** **Target Column** - The column that will be used to predict furthermore is the piece of data you want to understand. When selecting a target column, ask yourself what you want to predict</br> 
-    **j.** **Fold Column** - The fold column is used to create the training and validation datasets so that all rows with the same fold value will be in the same Dataset. This column will be used if no validation dataset is provided and the model is trained using cross-validation. For more information, see the H2O.ai documentation [here](http://docs.h2o.ai/driverless-ai/1-8-lts/docs/userguide/experiment-settings.html?highlight=accuracy#fold-column)</br>
-    **k.** **Weight Column** - Column that indicates the observation/instance weight (a.k.a. sample or row weight), if applicable. For more information see the H2O.ai documentation [here](http://docs.h2o.ai/driverless-ai/1-8-lts/docs/userguide/experiment-settings.html?highlight=accuracy#weight-column)</br>
-    **l.** **Time Column**(OFF by default) - Provides a time order(timestamps for observations). When data has a high dependency on time (such as seasonality or trend), you want to treat this problem as a time series problem. For more information, see the H2O.ai documentation [here](http://docs.h2o.ai/driverless-ai/1-8-lts/docs/userguide/experiment-settings.html?highlight=accuracy#time-column)
+    **b.** **Experiment Type** The experiment type can be supervised or unsupervised. In supervised learning the outcome variable is known. In unsupervised learning there is unlabeled data.
+    **c.** **Display Name** - Optional: Specify a display name for the new experiment. There are no character or length restrictions for naming. If this field is left blank, Driverless AI will automatically generate a name for the experiment.</br>
+    **d.** **Training Dataset** - The name of the Dataset being used to create an experiment</br>
+    **e.** **Rows** - Total number of rows</br>
+    **f.** **Columns** - Total number of columns</br>
+    **g.** **Dropped Columns** - Drop column(s) from your Dataset that you don't want to use in the experiment. For more information, see the H2O.ai documentation [here](http://docs.h2o.ai/driverless-ai/1-8-lts/docs/userguide/experiment-settings.html?highlight=accuracy#dropped-columns)</br>
+    **h.** **Validation Dataset** - Select the Dataset you want to validate. This set will be used to validate parameters like models, features, etc. For more information, see the H2O.ai documentation [here](http://docs.h2o.ai/driverless-ai/1-8-lts/docs/userguide/experiment-settings.html?highlight=accuracy#validation-dataset)</br>
+    **i.** **Test Dataset** - The Dataset will test the model generated from the training dataset. It's not used during the model's training, and results are available at the end of the experiment. For more information, see the H2O.ai documentation [here](http://docs.h2o.ai/driverless-ai/1-8-lts/docs/userguide/experiment-settings.html?highlight=accuracy#test-dataset)</br>
+    **j.** **Target Column** - The column that will be used to predict furthermore is the piece of data you want to understand. When selecting a target column, ask yourself what you want to predict</br> 
+    **k.** **Fold Column** - The fold column is used to create the training and validation datasets so that all rows with the same fold value will be in the same Dataset. This column will be used if no validation dataset is provided and the model is trained using cross-validation. For more information, see the H2O.ai documentation [here](http://docs.h2o.ai/driverless-ai/1-8-lts/docs/userguide/experiment-settings.html?highlight=accuracy#fold-column)</br>
+    **l.** **Weight Column** - Column that indicates the observation/instance weight (a.k.a. sample or row weight), if applicable. For more information see the H2O.ai documentation [here](http://docs.h2o.ai/driverless-ai/1-8-lts/docs/userguide/experiment-settings.html?highlight=accuracy#weight-column)</br>
+    **m.** **Time Column**(OFF by default) - Provides a time order(timestamps for observations). When data has a high dependency on time (such as seasonality or trend), you want to treat this problem as a time series problem. For more information, see the H2O.ai documentation [here](http://docs.h2o.ai/driverless-ai/1-8-lts/docs/userguide/experiment-settings.html?highlight=accuracy#time-column)
 
 4\. Continuing with our experiment, name your experiment as follows: `Titanic Classification Tutorial`
 
@@ -538,7 +539,7 @@ A clean dataset is essential for the creation of a good predictive model. The pr
 
 ![add-test-set](assets/dai-titanic-test-experiment.jpg)
 
-7\. Now, select the **TARGET COLUMN**. In our case, the column will be **survived**. We want to know who will be *surviving* base on the information the model will be trained on (e.g., age):
+7\. Now, select the **TARGET COLUMN**. In our case, the column will be **survived**. We want to know who will be *surviving* based on the information the model will be trained on (e.g., age):
 
 ![train-set-drop-name-column](assets/train-set-drop-name-column.png)
 
@@ -627,7 +628,7 @@ The *survived* attribute was selected because, as an insurance company, we want 
                                                             
 11\. Once the experiment is complete, an **Experiment Summary** will appear:
 
-![experiment-summary](assets/experiment-summary.png)
+![experiment-summary](assets/Experiment_Summary.png)
 
 - *Things to Note:*</br>
     **a.** **Status Complete Options:**
@@ -670,7 +671,7 @@ The *survived* attribute was selected because, as an insurance company, we want 
 
 Again, Driverless AI performs feature engineering on the dataset to determine the optimal representation of the data being used to train the models  (experiment): 
 
-![feature-engineering-1](assets/feature-engineering-1.jpg)
+![feature-engineering-1](assets/Feature_Engineering.jpg)
 
 Transformations in Driverless AI are applied to columns in the data. The transformers create the engineered features in experiments.
 Driverless AI provides a number of transformers. The following transformers are available for regression and classification (multiclass and binary) experiments:
@@ -847,10 +848,10 @@ Let's explore the results of this classification experiment. You can find useful
 
 For non-time-series experiments, Driverless AI  provides several visual explanations and reason codes for the trained Driverless AI model and its results. After the predictive model is finished, we can have access to this reason codes and visuals by generating an **MLI Report**. With that in mind, let us focus on the fourth step of the Driverless AI workflow: **Interpret the model**. 
 
-1\. **Generate MLI Report**: In the **Status Complete** section, click **Interpret this Model**:
+1\. **Generate MLI Report**: In the **Status Complete** section, click **Interpret this Model** with **Default Settings**:
 
 <p align="center"> 
-<img src='assets/interpret-this-model.png' width="355" height="345"></img>    
+<img src='assets/Interpret_Model.png' width="355" height="345"></img>    
 </p>
 
 The Model Interpretation page is organized into three tabs:
@@ -861,16 +862,16 @@ The Model Interpretation page is organized into three tabs:
 
 Once the **MLI Experiment is finished** the following should appear:
 
-![dai-model](assets/dai-model.png)
+![dai-model](assets/MLI_Experiment.png)
 
 - *Things to Note:*
 
 **a.** **Summary** of MLI experiment. This page provides an overview of the interpretation, including the dataset and Driverless AI experiment (if available) that were used for the interpretation along with the feature space (original or transformed), target column, problem type, and k-Lime information:
 
-![mli-report-page-1.jpg](assets/mli-report-page-1.png)
-![mli-report-page-2.jpg](assets/mli-report-page-2.png)
-![mli-report-page-3.jpg](assets/mli-report-page-3.png)
-![mli-report-page-4.jpg](assets/mli-report-page-4.png)
+![mli-report-page-1.jpg](assets/MLI_Summary.png)
+![mli-report-page-2.jpg](assets/MLI_Summary2.png)
+![mli-report-page-3.jpg](assets/MLI_Summary3.png)
+
 
 
 **b.** The DAI Model tab is organized into tiles for each interpretation method. To view a specific plot, click the tile for the plot that you want to view.
@@ -879,7 +880,7 @@ For binary classification and regression experiments, this tab includes Feature 
 
 For multiclass classification experiments, this tab includes Feature Importance and Shapley plots for original and transformed features:
 
-![dai-model-graphs](assets/dai-model-graphs.png)
+![dai-model-graphs](assets/Surrogate_Models.png)
 
 - *Things to Note*</br>
 
@@ -895,7 +896,7 @@ For multiclass classification experiments, this tab includes Feature Importance 
 
     To access it consider the following steps: click on the **DIA** (Disparate Impact Analysis) tile:
 
-    ![disparate-impact-analysis-1](assets/disparate-impact-analysis-1.jpg)
+    ![disparate-impact-analysis-1](assets/Sensitivity_Analysis.jpg)
     ![disparate-impact-analysis-2](assets/disparate-impact-analysis-2.jpg)</br>
     </br>
     **c.** The **Original Feature Importance** chart is available for all models for binary classification, multiclass classification, and regression experiments.
@@ -926,7 +927,7 @@ For multiclass classification experiments, this tab includes Feature Importance 
 
     To access it consider the following steps: click on the **Transformed Shapley** tile:
 
-    ![transformed-shapley](assets/transformed-shapley.jpg)</br>
+    ![transformed-shapley](assets/Transformed_Shapley.jpg)</br>
     </br>
     **f.** **DAI Data Zip Archive** - dia-explainer.zip</br>
     </br>
@@ -958,43 +959,43 @@ A **surrogate model** is a data mining and engineering technique in which a gene
 
 **c.** The Surrogate Model tab is organized into tiles for each interpretation method. To view a specific plot, click the tile for the plot that you want to view. For binary classification and regression experiments, this tab includes K-LIME/LIME-SUP and Decision Tree plots as well as Feature Importance, Partial Dependence, and LOCO plots for the Random Forest surrogate model. For more information on these plots, see [Surrogate Model Plots](http://docs.h2o.ai/driverless-ai/latest-stable/docs/userguide/interpret-understanding.html#surrogate-model-plots).
 
-![surrogate-models](assets/surrogate-models.png)
+![surrogate-models](assets/Surrogate_Models_Dash.png)
 
 -  *Things to Note*</br>
 
     **a.** **K-Lime**(to access this, click on the plot tile): 
 
-    ![k-lime](assets/k-lime.jpg)</br>
+    ![k-lime](assets/K-Lime.png)</br>
     </br>
     **b.** **RF Feature Importance**(to access this, click on the chart tile): 
 
-    ![rf-feature-importance](assets/rf-feature-importance.jpg)</br>
+    ![rf-feature-importance](assets/Rf_Feature_Importance.png)</br>
     </br>
     **c.** **RF LOCO**(to access this, click on the chart tile):
 
-    ![rf-loco](assets/rf-loco.jpg)</br>
+    ![rf-loco](assets/RD_Loco.png)</br>
     </br>
     **d.** **RF Partial Dependence Plot**(to access this, click on the plot tile):
 
-    ![rf-partial-dependence-plot](assets/rf-partial-dependence-plot.jpg)</br>
+    ![rf-partial-dependence-plot](assets/RF_Partial_Dependence.png)</br>
     </br>
     **e.** **Surrogate and Shapley Zip Archive** (to access this, click on the zip tile): surrogates-and-shapleys-explainer.zip</br>
     </br>
     **f.** **Decision Tree**(to access this, click on the graph tile):
 
-    ![decision-tree](assets/decision-tree.jpg)</br>
+    ![decision-tree](assets/Decision_Tree.png)</br>
     </br>
     **g.** **Decision Tree Surrogate Rules Zip**(to access this, click on the zip tile): dt-surrogate-explainer.zip
 
 
-**d.** **Dashboard** - The Dashboard button contains a dashboard with an overview of the interpretations (built using surrogate models).
+**d.** **Surrogate Models Dashboard** - The Dashboard button contains a dashboard with an overview of the interpretations (built using surrogate models).
 
-![dashboard](assets/dashboard.jpg)
+![dashboard](assets/Surrogate_Models_Dashboard.png)
 
 **e.** The **Action** button on the MLI page can be used to download the reason codes, scoring pipelines for productionization and MLI logs: 
 
 <p align="center"> 
-<img src='assets/regression-and-classification-explanations-actions.png' width="535" height="450"></img>   
+<img src='assets/Actions_Drop_Down.png' width="535" height="450"></img>   
 </p>
 
 - *Things to Note:*</br>
@@ -1022,9 +1023,9 @@ Display MLI Python Logs: View MLI Python logs for the interpretation.</br>
 
 ### MLI Dashboard
 
-1\. Select the MLI **Dashboard** and explore the different types of insights and explanations regarding the model and its results. All plots are interactive.
+1\. Select the **Surrogate Models Dashboard** and explore the different types of insights and explanations regarding the model and its results. All plots are interactive.
 
-![mli-dashboard](assets/mli-dashboard.png)
+![mli-dashboard](assets/Surrogate_Models_Dashboard_graphs.png)
 
 **Note**: On the top right corner, where it says "Row Number or Column Value," you are allowed the following actions: This option allows a user to search for a particular observation by row number or the column value.  The user cannot specify column values - MLI automatically chooses columns whose values are unique (dataset row count equals the number of unique values in a column).
 
@@ -1032,13 +1033,13 @@ Display MLI Python Logs: View MLI Python logs for the interpretation.</br>
     **a.** **K-Lime** -  This plot shows the Driverless AI model and LIME model predictions in sorted order by the Driverless AI model predictions. In white is the global linear model of Driverless AI predictions.
     - Hover over any of the plot points and view the LIME reason codes for that value.
     - Select a point where *Actual value* is **1** and note the reason codes for that prediction value.
-        ![dashboard-klime](assets/dashboard-klime.jpg)
+        ![dashboard-klime](assets/Lime_Dashboard.png)
         - Learn more about the **K-Lime** graph on the next self-paced course: [Machine Learning Experiment Scoring and Analysis - Financial Focus](https://h2oai.github.io/tutorials/machine-learning-experiment-scoring-and-analysis-financial-focus).
 
     **b.** Feature Importance - 
     This graph shows the essential features that drive the model behavior.
     - Which attribute/feature had the most importance?
-        ![dashboard-feature-importance](assets/dashboard-feature-importance.jpg)
+        ![dashboard-feature-importance](assets/Feature_Importance_Dashboard.png)
         - Learn more about the **Feature Importance** graph on the next self-paced course:[Machine Learning Interpretability - Financial Focus](https://h2oai.github.io/tutorials/machine-learning-experiment-scoring-and-analysis-financial-focus).
 
 
@@ -1047,14 +1048,14 @@ Display MLI Python Logs: View MLI Python logs for the interpretation.</br>
     The decision Tree Surrogate model displays the model's approximate flowchart of the complex Driverless AI model's decision-making. Higher and more frequent features are more important. Features above or below one-another can indicate an interaction. Finally, the thick yellow line is the most common decision path through the decision.
 
     - What is the most common decision path for the Titanic Training set?
-        ![decision-tree-task-8-answer](assets/decision-tree-task-8-answer.jpg)
+        ![decision-tree-task-8-answer](assets/Decision_Tree_Dashboard.png)
         - Learn more about the **Decision Tree** graph on the next self-paced course: [Machine Learning Interpretability](https://h2oai.github.io/tutorials/machine-learning-interpretability).
 
     **d.** Partial Dependence and Individual Conditional Expectation (ICE) plots represent the model prediction for different original variables' values. It shows the average model behavior for important original variables.
 
     The grey bar represents the standard deviation of predictions. The yellow dot represents the average predictions.
 
-    ![dashboard-partial-dependence-plot](assets/dashboard-partial-dependence-plot.jpg)
+    ![dashboard-partial-dependence-plot](assets/Partial_Dependence_Dashboard)
 
     - Explore other average values for different variables and compare the results to your original observations. To change the variable, select use the search bar on top of the **Feature Importance** chart. 
             
@@ -1063,7 +1064,7 @@ Display MLI Python Logs: View MLI Python logs for the interpretation.</br>
     **e.** **Explanations** provide detailed, easy-to-read **Reason Codes** for the top Global/Local Attributions. To access the explanations, click on the EXPLANATIONS button located on the screen's top right corner(a).
 
     ![explanations-button](assets/explanations-button.png)
-    ![mli-dashboard-explanation](assets/mli-dashboard-explanation.jpg)
+    ![mli-dashboard-explanation](assets/Explanation_Dashboard.png)
 
 **Every single graph, plot, or chart we have observed has a `?` icon, and this provides further information about the visual. It can be located at the top right corner of each visual.** 
 
@@ -1091,7 +1092,7 @@ To emphasize, Driverless AI allows you to download auto-generated documents such
 
 Click on **Download Summary & Logs**: Driverless AI will download a zip file:
 
-![download-experiment-summary](assets/download-experiment-summary.png)
+![download-experiment-summary](assets/Download_Summary_Logs.png)
 
 When you open the zip file, Driverless AI will include the following files:
 
@@ -1110,7 +1111,7 @@ Besides the **DOWNLOAD SUMMARY & LOGS**, you can click the **DOWNLOAD AUTODOC** 
 
 The **AutoDoc** feature is used to generate automated machine learning documentation for individual Driverless AI experiments. This editable document contains an overview of the experiment and includes other significant details like feature engineering and final model performance. To generate an AutoDoc click on the **DOWNLOAD AUTODOC** option located in the **STATUS: COMPLETE** section. 
 
-![download-autoreport](assets/download-autoreport.png)
+![download-autoreport](assets/Download_Autodoc.png)
 
 ### Deeper Dive and Resources
 
