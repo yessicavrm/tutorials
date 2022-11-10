@@ -64,7 +64,7 @@ On the **Datasets** page, the following options and features can be found. Now, 
     **d.** In the **Experiments** section, you can view completed experiments. Experiments can be revised or deleted.</br>
     **e.** In the **Diagnostics** section, you can diagnose a model and view model performance for multiple scorers based on the existing model and dataset.</br>
     **f.** In the **MLI (Machine Learning Interpretability)** section, you can interpret a model and view a list of already interpreted models.</br>
-    **g.** In the **Recipes** section, you have the option to add your own custom recipe or add  official recipes from H2O.ai’s github repository. You can add a custom recipe from your computer, a url, a bitbucket, or with an editor. </br>    
+    **g.** In the **Recipes** section, you have the option to add your own custom recipe or add  official recipes from H2O.ai’s github repository. Custom recipes are Python code snippets that can be provided for transformers, models and scorers. You can add a custom recipe from your computer, a url, a bitbucket, or with an editor. </br>    
    **h.** The **Deployments** section allows you to access the MOJO and Python scoring pipelines for you to test or integrate into a final product. You can also deploy locally or in the cloud.</br>
     **i.** The **Resources** dropdown menu provides you with the following options to view or download: 
     - System Info
@@ -242,27 +242,28 @@ To further understand the data, please consider the table below:
 |home.des|Home Destination| - |
 
 ### Add the Dataset
-1\. Access your H2O AI Cloud account and select the H2O Drive application.
+1\. Access your H2O AI Cloud account and navigate to the H2O Drive application.
 <p align="center">
 <img src="assets/H2O_ai_cloud_portal.jpg" width= "50%" height= "50%">
 </p>
 
-Select **visit** and you will be taken to the H2O Drive homepage.
+**a.** Select **visit** and you will be taken to the H2O Drive homepage.
+<p align="center">
+<img src="assets/h2oai_click_visit.jpg" width="60%" height="60%">
+</p>
 
-![h2oai_click_visit](assets/h2oai_click_visit.jpg)
-
-Next you'll need to import the Titanic dataset by selecting Amazon S3 and inputting **https://s3.amazonaws.com/data.h2o.ai/DAI-Tutorials/titanic.csv**
+**b.** Next you'll need to import the Titanic dataset by selecting Amazon S3 and pasting the S3 Object link: **https://s3.amazonaws.com/data.h2o.ai/DAI-Tutorials/titanic.csv**
 
  ![h2o_drive_import_s3](assets/h2o_drive_import_s3.jpg)
 
-See the video below if you would like to follow along.
+**Note:** See below a video demonstration of how to add the dataset to H2O Drive.
 
 <p align="center">
-<img src="assets/H2o_Drive_upload_gif.gif" width="50%" height="50%">
+<img src="assets/H2o_Drive_upload_gif.gif" width="60%" height="60%">
 </p>
 
 
-1\. Navigate back to the H2O Driverless AI **Datasets** page. To add the dataset:
+2\. Navigate back to the H2O Driverless AI **Datasets** page. To add the dataset:
 
 <p align="center">
 <img src="assets/dai-add-dataset.jpg" width="300" height="300">
@@ -272,7 +273,7 @@ See the video below if you would like to follow along.
 **b.** Select **FILE SYSTEM**:
 
 
-2\. Inside the **FILE SYSTEM**:
+3\. Inside the **FILE SYSTEM**:
 
 ![select-titanic-dataset](assets/select-titanic-csv.jpg)
 
@@ -280,7 +281,7 @@ See the video below if you would like to follow along.
 **b.** Select the `titanic.csv` </br>
 **c.** **Click to Import Selection**:
 
-3\. The following will appear after you have successfully imported the dataset:
+4\. The following will appear after you have successfully imported the dataset:
 
 ![titanic-set-overview](assets/dai-titanic-dataset.jpg)
 
@@ -295,7 +296,7 @@ See the video below if you would like to follow along.
 
 Now that the dataset has been imported let's discover on the next task how Driverless AI allows users to further understand a selected dataset. Doing so will allow us to further explore the second step of the Driverless AI workflow: visualize data. 
 
-**Note:** See below a short video demonstration of how to import your dataset to Driverless AI
+**Note:** See below a video demonstration of how to import your dataset to Driverless AI.
 <p align="center">
 <img src="assets/dai-add-dataset-gif.gif">
 </p>
