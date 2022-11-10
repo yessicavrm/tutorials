@@ -259,7 +259,7 @@ To further understand the data, please consider the table below:
 **Note:** See below a video demonstration of how to add the dataset to H2O Drive.
 
 <p align="center">
-<img src="assets/H2o_Drive_upload_gif.gif" width="60%" height="60%">
+<img src="assets/H2o_Drive_upload_gif.gif">
 </p>
 
 
