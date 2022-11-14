@@ -21,19 +21,21 @@
 
 For this self-paced course, we will explore the Titanic dataset from the perspective of a passenger life insurance company while using and learning about [H2O.ai's](https://www.h2o.ai/) enterprise product, [Driverless AI](https://www.h2o.ai/products/h2o-driverless-ai/). We will explore possible risk factors derived from this dataset that could have been considered when selling passenger insurances. More specifically, we will create a predictive model to determine what factors contributed to a passenger surviving.
 
-In part, this self-paced course will also be an overview of Driverless AI. You will learn how to load data, explore data details, generate Auto visualizations, launch an experiment, explore feature engineering, view experiment results. As well, we will go through a quick tour of the Machine Learning Interpretability report that you can generate right after an experiment is complete. 
+In part, this self-paced course will also be an overview of Driverless AI and H2O Drive. You will learn how to load data, explore data details, generate Auto visualizations, launch an experiment, explore feature engineering, and view experiment results. Also, we will go through a quick tour of the Machine Learning Interpretability report that you can generate right after an experiment is complete. 
 
 **Note**: This self-paced course has been built on Aquarium, which is H2O.ai's cloud environment providing software access for workshops, conferences, and training. The labs in Aquarium have datasets, experiments, projects, and other content preloaded. If you use your version of Driverless AI, you will not see the preloaded content.
 
 ## Prerequisites
 
 * Basic knowledge of Machine Learning and Statistics
+* A Two-Hour Test Drive session: Test Drive is H2O.ai's Driverless AI on the AWS Cloud. No need to download software. Explore all the features and benefits of the H2O Automatic Learning Platform.
 * Access to an **H2O AI Cloud account**
 * If you are not currently an H2O AI Cloud Customer, contact H2O (training.h2o.ai) to sign up for access to our H2O University managed cloud instance.
+   * Need a Two-Hour Test Drive session? Follow the instructions on this quick self-paced course to get a Test Drive session started. After the Driverless AI Test Drive session starts, continue reading the remaining prerequisites of this self-paced course, then start Task 1: Product Tour.
+   * Already have a Two-Hour Test Drive session? Proceed to Task 1: Product Tour.
 
 
-
-**Note:  You will be required to start and stop your instance on Enterprise Steam.**
+**Note: Aquarium’s Cloud AI Test Drive lab has a license key built-in, so you don’t need to request one to use it. Each H2O Cloud AI Test Drive instance will be available to you for two hours, after which it will terminate. No work will be saved. If you need more time to further explore Driverless AI, you can always launch another Test Drive instance or reach out to our sales team via the contact us form.**
 
 
 ## Task 1: Product Tour
@@ -50,8 +52,14 @@ Over the last several years, machine learning has become an integral part of man
 H2O Driverless AI is a high-performance, GPU-enabled computing platform for automatic development and rapid deployment of state-of-the-art predictive analytics models. It reads tabular data from plain text sources, Hadoop, or S3 buckets and automates data visualization and building predictive models. Driverless AI targets business applications such as loss-given-default, probability of default, customer churn, campaign response, fraud detection, anti-money-laundering, demand forecasting, and predictive asset maintenance models. (Or in machine learning parlance: common regression, binomial classification, and multinomial classification problems). 
 
 ### Tour
+After you login to your H2O AI Cloud instance this will be the first thing you see:
 
-Welcome to the Driverless AI **Datasets** page(this will be the first thing you will see when you click your **Driverless AI URL**): 
+** IMAGE **
+
+To navigate to Driverless AI select **My AI Instances** where you will start up an instance of Driverless AI.
+
+
+Welcome to the Driverless AI **Datasets** page(this will be the first thing you will see when you click your instance): 
 
 ![dai-datasets-page](assets/dai-datasets-homepage.jpg)
 
@@ -64,7 +72,7 @@ On the **Datasets** page, the following options and features can be found. Now, 
     **d.** In the **Experiments** section, you can view completed experiments. Experiments can be revised or deleted.</br>
     **e.** In the **Diagnostics** section, you can diagnose a model and view model performance for multiple scorers based on the existing model and dataset.</br>
     **f.** In the **MLI (Machine Learning Interpretability)** section, you can interpret a model and view a list of already interpreted models.</br>
-    **g.** In the **Recipes** section, you have the option to add your own custom recipe or add  official recipes from H2O.ai’s github repository. Custom recipes are Python code snippets that can be provided for transformers, models and scorers. You can add a custom recipe from your computer, a url, a bitbucket, or with an editor. </br>    
+    **g.** In the **Recipes** section, you have the option to add your own custom recipe or add  official recipes from H2O.ai’s github repository. Custom recipes are Python code snippets that can be provided for transformers, models and scorers. You can add a custom recipe from your computer, a url, a bitbucket, or with an editor.</br>    
    **h.** The **Deployments** section allows you to access the MOJO and Python scoring pipelines for you to test or integrate into a final product. You can also deploy locally or in the cloud.</br>
     **i.** The **Resources** dropdown menu provides you with the following options to view or download: 
     - System Info
@@ -72,7 +80,7 @@ On the **Datasets** page, the following options and features can be found. Now, 
     - R Client 
     - MOJO2 Java Runtime
     - MOJO2 Py Runtime 
-    - MOJO 2 R Runtime
+    - MOJO2 R Runtime
     - Tutorials 
     - Help
     - About</br>
@@ -84,7 +92,7 @@ On the **Datasets** page, the following options and features can be found. Now, 
     **k.** **<**: Takes you back to the previous page.</br>
     **l.** **H2O.ai**: Takes you back to the H2OAI **Datasets** page.</br>
     **m.** **Driverless AI 1.X.X**: Version of Driverless AI </br>
-    **n.** The **+ Add a Dataset(or Drag and Drop)** button provides the following options: 
+    **n.** The **+ Add Dataset** button provides the following options: 
     - *File System*: Search for datasets in our repository 
     - *Upload File*: Upload a dataset from your computer 
     - *Amazon S3*: Upload a dataset by using S3 buckets
@@ -242,7 +250,8 @@ To further understand the data, please consider the table below:
 |home.des|Home Destination| - |
 
 ### Add the Dataset
-1\. Access your H2O AI Cloud account and navigate to the H2O Drive application.
+1\. Access your H2O AI Cloud account and navigate to the H2O Drive application.<br>
+**Note:Import or upload data using the H2O Drive App to then build machine learning models on H2O using Driverless AI, H2O-3, or H2O AI Cloud. Data in H2O Drive can also be used within many of the apps, which means you only have to bring data into the H2O AI Cloud once.**<br>
 <p align="center">
 <img src="assets/H2O_ai_cloud_portal.jpg" width= "50%" height= "50%">
 </p>
@@ -269,7 +278,7 @@ To further understand the data, please consider the table below:
 <img src="assets/dai-add-dataset.jpg" width="300" height="300">
 </p>
 
-**a.** Click on **Add a Dataset(or Drag and Drop)**  
+**a.** Click on **Add Dataset**  
 **b.** Select **H2O Drive**:
 
 
@@ -364,7 +373,7 @@ Next, we are going to confirm that the dataset loaded correctly and that it has 
             ![feature-props-click-to-edit](assets/dai-autodetect-details-highlight.jpg)
     - Click **Feature Engineering Type(s):** 
             ![feature-props-auto-to-detect](assets/dai-feature-auto-detect.jpg)
-    - Select column feature engineering types(b) (then click **done** at the bottom of page(c)) or start typing to filter out items(a):
+    - Select column feature engineering types(**b**) (then click **done** at the bottom of page(**c**)) or start typing to filter out items(**a**):
             ![logical-type-options](assets/logical-type-options.png)
 
 3\. To continue learning about what details are available, click on the following button: **Dataset Rows**. The following will appear: 
@@ -582,7 +591,7 @@ The *survived* attribute was selected because, as an insurance company, we want 
     **h.** **Create Leaderboard** - The create leaderboard feature runs multiple diverse experiments that provide an overview of the dataset. This feature also provides you with relevant information to be used when deciding which models to place into production. Such information can be around complexity, accuracy, size, and time tradeoffs. 
     - Refer to the **Expert Settings** topic for information on **Expert Settings** that can be used to control this feature. For more details of the default models built for a leaderboard, see [Leaderboard Models](http://docs.h2o.ai/driverless-ai/latest-stable/docs/userguide/leaderboard.html?highlight=create%20leaderboard#leaderboard-models).
 
-9\. Update the following experiment settings, so they match the image below, then select **Launch Experiment** (use the **+ (increase)** or **-(decrease)** icons t located in each training setting):
+9\. Update the following experiment settings, so they match the image below, then select **Launch Experiment** (use the **+ (increase)** or **-(decrease)** icons located in each training setting):
 
 - **Accuracy:** 4
 - **Time:** 2
@@ -599,7 +608,7 @@ The *survived* attribute was selected because, as an insurance company, we want 
 
 10\. The **Experiment** page will look similar to the one below after **95%** of the experiment is complete:
 
-![experiment-running-46](assets/experiment-running-95.png)
+![experiment-running-46](assets/Experiment_Running_95.png)
 
 - *Things to Note:*</br>
     **a.** The **Experiment Name** section displays the name of your experiment. If you do not assign a name to it, Driverless AI will generate a random name. The name can be changed at any time. You can click on the title and change it.</br>
@@ -671,7 +680,7 @@ The *survived* attribute was selected because, as an insurance company, we want 
 
 Again, Driverless AI performs feature engineering on the dataset to determine the optimal representation of the data being used to train the models  (experiment): 
 
-![feature-engineering-1](assets/Feature_Engineering.jpg)
+![feature-engineering-1](assets/Feature_Engineering.png)
 
 Transformations in Driverless AI are applied to columns in the data. The transformers create the engineered features in experiments.
 Driverless AI provides a number of transformers. The following transformers are available for regression and classification (multiclass and binary) experiments:
@@ -927,9 +936,9 @@ For multiclass classification experiments, this tab includes Feature Importance 
 
     To access it consider the following steps: click on the **Transformed Shapley** tile:
 
-    ![transformed-shapley](assets/Transformed_Shapley.jpg)</br>
+    ![transformed-shapley](assets/Transformed_Shapley.png)</br>
     </br>
-    **f.** **DAI Data Zip Archive** - dia-explainer.zip</br>
+    **f.** **DAI Data Zip Archive** - dai-explainer.zip</br>
     </br>
     **g.** **DAI PD/ICE**
 
@@ -973,7 +982,7 @@ A **surrogate model** is a data mining and engineering technique in which a gene
     </br>
     **c.** **RF LOCO**(to access this, click on the chart tile):
 
-    ![rf-loco](assets/RD_Loco.png)</br>
+    ![rf-loco](assets/RF_Loco.png)</br>
     </br>
     **d.** **RF Partial Dependence Plot**(to access this, click on the plot tile):
 
@@ -1055,7 +1064,7 @@ Display MLI Python Logs: View MLI Python logs for the interpretation.</br>
 
     The grey bar represents the standard deviation of predictions. The yellow dot represents the average predictions.
 
-    ![dashboard-partial-dependence-plot](assets/Partial_Dependence_Dashboard)
+    ![dashboard-partial-dependence-plot](assets/Partial_Dependence_Dashboard.png)
 
     - Explore other average values for different variables and compare the results to your original observations. To change the variable, select use the search bar on top of the **Feature Importance** chart. 
             
