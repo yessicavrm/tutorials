@@ -1,7 +1,7 @@
 # Machine Learning Experiment Scoring and Analysis - Financial Focus
 
 ## Outline
-- [Objective](#objective)
+
 - [Prerequisites](#prerequisites)
 - [Task 1:  Launch Experiment](#task-1-launch-experiment)
 - [Task 2: Explore Experiment Settings and Expert Settings](#task-2-explore-experiment-settings-and-expert-settings)
